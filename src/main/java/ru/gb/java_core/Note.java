@@ -8,6 +8,8 @@ public class Note {
 	private String content;
 	private Date creationTime;
 	
+	public Note() {};
+	
 	public Note(String creatorName, String content) {
 		this.creatorName = creatorName;
 		this.content = content;
@@ -32,6 +34,10 @@ public class Note {
 
 	public void setContent(String content) {
 		this.content = content;
+	}
+	
+	public void setCreationTime(Date creationTime) {
+		this.creationTime = creationTime;
 	}
 
 	@Override

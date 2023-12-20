@@ -10,6 +10,10 @@ public class Notebook {
 		noteList = new ArrayList<>();
 	}
 	
+	public Notebook(List<Note> noteList) {
+		this.noteList = noteList;
+	}
+
 	public void addNote(String creatorName, String text) {
 		Note note = new Note(creatorName, text);
 		noteList.add(note);
@@ -38,6 +42,10 @@ public class Notebook {
 				return note;
 		}
 		return null;
+	}
+	
+	public List<Note> getNoteList() {
+		return noteList;
 	}
 
 	@Override
